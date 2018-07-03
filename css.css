@@ -1,0 +1,198 @@
+body{
+    height: 700px;
+    background-color: black;
+}
+.header{
+    text-align: center;
+    position: relative;
+}
+h1{
+    font-size: 3em;
+}
+.search{
+    width: 200px;
+    height: 30px;
+    font-size: 25px; 
+    border-radius: 5px;   
+}
+.searchbutton:hover{
+    /*width: 95px;
+    margin-left: 0px;*/
+    cursor: pointer;
+    background-color: grey; 
+}
+.searchbutton{
+    width: 85px;
+    height: 36px;
+    vertical-align: bottom;
+    font-size: 25px; 
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.onimg{
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+/*.anim{
+    width: 0px; 
+    height: 2em; 
+    white-space: nowrap; 
+    overflow: hidden;
+}*/
+.containerofinput{
+    
+    top:  60px;
+    right: 16px;
+    
+}
+.leftlogo{
+    top:  8px;
+    left: 16px;
+    color: white;
+}
+.title{
+    top:  150px;
+    left: 16px;
+    color: white;
+}
+.year{
+    top:  220px;
+    left: 16px;
+    color: white;
+}
+.director{
+    top:  290px;
+    left: 16px;
+    color: white;
+}
+.imbd{
+    top:  360px;
+    left: 16px;
+    color: white;
+}
+.poster{
+    width: auto;
+    height: 420px;
+    top:  430px;
+    left: 16px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.main{
+ 
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(46, 19, 2);
+    color: beige;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color:rgb(2, 17, 27);
+    color:whitesmoke;
+    transform: rotateY(180deg);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 745px){
+    .containerofinput{
+    
+        top:  200px;
+        right: 100px;
+        
+    }
+
+}
+@media screen and (max-width: 570px){
+    .title{
+       top: 250px; 
+    }
+    .year{
+        top: 320px;
+    }
+    .director{
+        top: 390px;
+    }
+    .imbd{
+        top: 460px;
+    }
+    .poster{
+        top: 530px;
+    }
+
+}
+@media screen and (max-width: 460px){
+    .containerofinput{
+    
+        top:  200px;
+        right: 25px;
+        
+    }
+}
+@media screen and (max-width: 336px){
+    .title{
+        top: 300px; 
+     }
+     .year{
+         top: 370px;
+     }
+     .director{
+         top: 440px;
+     }
+     .imbd{
+         top: 510px;
+     }
+     .poster{
+         top: 580px;
+     }
+}
+@media screen and (max-width: 345px){
+    .containerofinput{
+    
+        top:  200px;
+        right: 20px;
+        
+    }
+    .searchbutton{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 325px){
+
+    .poster{
+        height: 310px;;
+    }
+}
